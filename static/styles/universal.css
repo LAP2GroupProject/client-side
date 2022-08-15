@@ -49,6 +49,7 @@ li {
   width: 100%;
   height: 4rem;
   position: absolute;
+  z-index: 1;
 }
 
 .fa-solid.fa-bars {

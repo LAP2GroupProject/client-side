@@ -25,7 +25,7 @@
     ></script>
     <!-- custom css -->
     <link rel="stylesheet" href="../static/styles/styles.css" />
-    <link rel="stylesheet" href="../static/styles/login-register.css" />
+    <!-- <link rel="stylesheet" href="../static/styles/login-register.css" /> -->
     <!-- custom js -->
     <script src="../static/scripts/scripts.js" defer></script>
     <title>Login</title>
@@ -48,11 +48,54 @@
       <a href="./register.html">Register</a>
     </nav>
 
-    <main class="container"></main>
-
     <aside id="leftArrow">
       <i class="fa-solid fa-circle-left"></i>
     </aside>
+
+    <main>
+      <!-- ----------------------------------- 'NO HABITS' SECTION ---------------------------------------- -->
+      <section id="noHabitsBg">
+        <h1>You have no habits</h1>
+        <a href="./pages/habits_create.html" id="noHabitBtn">Create Habit</a>
+      </section>
+
+      <!-- ----------------------------------- 'SELECT HABITS' SECTION ---------------------------------------- -->
+      <section id="habitsBg">
+        <h1>Let's get started.</h1>
+        <h2>Choose a habit:</h2>
+
+        <form>
+          <div class="habit-div">
+            <input type="button" value="Sleep" />
+          </div>
+          <div class="habit-div">
+            <input type="button" value="Water" />
+          </div>
+          <div class="habit-div">
+            <input type="button" value="Exercise" />
+          </div>
+        </form>
+      </section>
+
+      <!-- ----------------------------------- 'SELECT FREQUENCY' SECTION ---------------------------------------- -->
+      <section id="habitCreateContainer">
+        <h1>Selected habit: <span>[Sleep]</span></h1>
+        <h2>Enter how many hours</h2>
+
+        <div class="username-div">
+          <input type="number" name="hours" id="hours" />
+          <input type="button" value="Submit" />
+        </div>
+      </section>
+
+      <!-- ----------------------------------- 'DISPLAY HABIT & FREQUENCY' SECTION ---------------------------------------- -->
+      <section id="displayHabitAndFrequencyBg">
+        <h1>Selected habit: <span>[Sleep]</span></h1>
+        <h2>I will sleep for: <span>[6]</span> hours</h2>
+
+        <a href="./user_habit.html">Next</a>
+      </section>
+    </main>
 
     <footer id="footerBg">
       <i class="fa-solid fa-user"></i>

@@ -35,49 +35,52 @@ li {
   list-style: none;
 }
 
-/****************************************************** nav (small) */
+/****************************************************** small nav */
 #navBarLargeBg {
   display: none;
 }
 
-#navBarSmallBg {
-  text-align: left;
-  font-size: 2rem;
-  background-color: #effffd;
-  padding: 0.7rem;
-  width: 100%;
-  height: 4rem;
-  position: absolute;
-  z-index: 1;
+#fullMobileNavBg {
   top: 0;
-}
-
-.fa-solid.fa-bars {
-  cursor: pointer;
-}
-
-.fa-solid.fa-bars:hover {
-  color: #42c2ff;
-}
-
-#navLinksSmall {
-  display: none;
-  grid-template-columns: auto;
-  justify-content: end;
-  justify-items: end;
-  right: 1rem;
-  top: 1rem;
   position: absolute;
+  width: 100%;
+  height: 2rem;
 }
 
-#navLinksSmall a:hover {
+#barIconBg {
+  background-color: #effffd;
+  text-align: left;
+  padding: 1rem;
+}
+
+.fa-solid.fa-bars#bars {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+#mobileNavLinksBg {
+  text-align: right;
+  background-color: #effffd;
+  display: none;
+  height: 5rem;
+}
+
+#mobileNavLinksBg li {
+  margin-right: 1rem;
+}
+
+#mobileNavLinksBg li a {
+  font-size: 1.5rem;
+}
+
+#mobileNavLinksBg li a:hover {
   color: #42c2ff;
   font-weight: 900;
 }
 
+/****************************************************** large nav */
 @media (min-width: 992px) {
-  /****************************************************** nav (large) */
-  #navBarSmallBg {
+  #fullMobileNavBg {
     display: none;
   }
 
@@ -107,20 +110,9 @@ li {
 }
 
 /****************************************************** arrow */
-#mainBgHabitCreate {
-  position: relative;
-  padding-top: 14rem;
-}
-
-@media (min-width: 576px) {
-  #mainBgHabitCreate {
-    padding-top: 8rem;
-  }
-}
-
 #leftArrow {
   position: absolute;
-  top: 5rem;
+  bottom: 6rem;
   left: 0.5rem;
 }
 
@@ -133,7 +125,37 @@ li {
   color: #42c2ff;
 }
 
-/****************************************************** create habit */
+/****************************************************** footer */
+#footerBg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: #effffd;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-content: center;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.fa-solid.fa-user:hover,
+.fa-solid.fa-calendar-days:hover,
+.fa-solid.fa-sun:hover {
+  color: #42c2ff;
+}
+
+@media (min-width: 992px) {
+  .fa-solid.fa-user,
+  .fa-solid.fa-calendar-days,
+  .fa-solid.fa-sun {
+    font-size: 2rem;
+  }
+}
+
+/****************************************************** create habit page */
 #habitCreateContainer {
   display: grid;
   grid-template-columns: auto;
@@ -179,7 +201,7 @@ h2 {
   }
 }
 
-/****************************************************** no habits */
+/************** no habits section */
 #mainBgHome {
   display: grid;
   justify-items: center;
@@ -225,32 +247,32 @@ h2 {
   }
 }
 
-/****************************************************** footer */
-#footerBg {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-  background-color: #effffd;
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  align-content: center;
-  justify-content: space-evenly;
-  font-size: 1.5rem;
-  cursor: pointer;
+/****************************************************** user habit page */
+#userHabitPg h1 {
+  margin-bottom: 2rem;
 }
 
-.fa-solid.fa-user:hover,
-.fa-solid.fa-calendar-days:hover,
-.fa-solid.fa-sun:hover {
-  color: #42c2ff;
+#userHabitPg span {
+  color: #85f4ff;
 }
 
 @media (min-width: 992px) {
-  .fa-solid.fa-user,
-  .fa-solid.fa-calendar-days,
-  .fa-solid.fa-sun {
-    font-size: 2rem;
+  #userHabitPg h1 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/****************************************************** user habit completed page */
+#userHabitCompletedPg h1 {
+  margin-bottom: 2rem;
+}
+
+#userHabitCompletedPg span {
+  color: #85f4ff;
+}
+
+@media (min-width: 992px) {
+  #userHabitCompletedPg h1 {
+    margin-bottom: 1.5rem;
   }
 }

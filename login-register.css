@@ -50,7 +50,7 @@ input, button {
     padding-bottom: 2%;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="email"] {
     border: none;
     background-color: #EFFFFD;
     /* background-image: url("./icons/sign-in-alt-solid.svg");

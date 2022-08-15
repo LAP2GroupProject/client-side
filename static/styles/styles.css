@@ -25,6 +25,7 @@ body {
   /* for footer */
   position: relative;
   min-height: 100vh;
+  padding-top: 13rem;
 }
 
 a {
@@ -42,7 +43,7 @@ li {
 
 #fullMobileNavBg {
   top: 0;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 2rem;
 }
@@ -95,7 +96,7 @@ li {
     align-content: center;
     justify-content: end;
     grid-gap: 4rem;
-    position: absolute;
+    position: fixed;
     top: 0;
   }
 
@@ -155,12 +156,100 @@ li {
   }
 }
 
-/****************************************************** create habit page */
-#habitCreateContainer {
+/******************************************************  no habits section */
+#noHabitsBg {
   display: grid;
   grid-template-columns: auto;
-  justify-content: center;
+  grid-gap: 1rem;
   justify-items: center;
+}
+
+#noHabitBtn {
+  background-color: #42c2ff;
+  padding: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+#noHabitBtn:hover {
+  background-color: #85f4ff;
+}
+
+@media (min-width: 576px) {
+  #noHabitsBg h1 {
+    font-size: 2.5rem;
+  }
+
+  #noHabitBtn {
+    padding: 1.5rem;
+  }
+
+  #noHabitBtn {
+    font-size: 1.5rem;
+  }
+}
+
+/******************************************************  select habits section */
+#habitsBg {
+  margin: 0 auto;
+  width: 18rem;
+  height: 16rem;
+  border: 1px solid lightgray;
+  border-radius: 2%;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  padding: 1rem;
+}
+
+#habitsBg h2 {
+  margin-bottom: 0;
+}
+
+.habit-div input[type='button'] {
+  border: none;
+  border-radius: 2%;
+  background-color: #42c2ff;
+  margin-top: 5%;
+  padding: 0.5rem 2rem;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.habit-div input[type='button']:hover {
+  background-color: #b8fff9;
+}
+
+@media (min-width: 992px) {
+  #habitsBg {
+    width: 27rem;
+    height: 21rem;
+  }
+
+  #habitsBg h1 {
+    font-size: 2rem;
+  }
+
+  #habitsBg h2 {
+    font-size: 1.5rem;
+  }
+
+  .habit-div input[type='button'] {
+    font-size: 1.5em;
+  }
+}
+
+/****************************************************** select frequency section */
+#habitCreateContainer {
+  margin: 0 auto;
+  width: 18rem;
+  height: 21rem;
+  border: 1px solid lightgray;
+  border-radius: 2%;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  padding: 1rem;
+}
+
+#habitCreateContainer h1 {
+  margin-top: 2rem;
 }
 
 #habitCreateContainer h1,
@@ -168,81 +257,92 @@ h2 {
   margin-bottom: 2rem;
 }
 
-#habitCreateContainer button {
-  margin-bottom: 1rem;
-  border-radius: 0.5rem;
+#habitCreateContainer span {
+  color: #42c2ff;
+}
+
+#habitCreateContainer .username-div {
+  margin: 5% 0;
+  padding-left: 3%;
+  border: 1px solid lightgray;
+  border-radius: 2%;
+  background-color: #effffd;
+  height: 3rem;
+}
+
+#habitCreateContainer input[type='number'] {
+  border: none;
+  background-color: #effffd;
+  width: 80%;
+  outline: none;
+  font-size: 2rem;
+}
+
+#habitCreateContainer input[type='button'] {
+  margin: 2.5rem 0 0;
   cursor: pointer;
-  background-color: #85f4ff;
+  background-color: #42c2ff;
   border: none;
   padding: 1rem 2rem;
-  display: inline-block;
-  font-size: 1.2rem;
+  font-weight: 900;
+  font-size: 1.5rem;
 }
 
-#habitCreateContainer button:hover {
-  background-color: #42c2ff;
+#habitCreateContainer input[type='button']:hover {
+  background-color: #85f4ff;
 }
 
-@media (min-width: 576px) {
-  #habitCreateContainer h1 {
-    font-size: 3rem;
+@media (min-width: 992px) {
+  #habitCreateContainer {
+    height: 23rem;
+    width: 27rem;
   }
 
-  #habitCreateContainer span {
-    color: #42c2ff;
+  #habitCreateContainer h1 {
+    font-size: 2rem;
   }
 
   #habitCreateContainer h2 {
-    font-size: 2rem;
-  }
-
-  #habitCreateContainer button {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
-/************** no habits section */
-#mainBgHome {
+/****************************************************** display habit & frequency section */
+#displayHabitAndFrequencyBg {
   display: grid;
+  grid-template-columns: auto;
+  grid-gap: 1rem;
   justify-items: center;
-  /* footer height */
-  padding-bottom: 2.5rem;
 }
 
-#homeTitle {
-  margin: 15rem auto 2rem;
-}
-
-@media (min-width: 576px) {
-  #homeTitle h1 {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 768px) {
-  #homeTitle {
-    margin-top: 12rem;
-  }
-}
-
-#noHabitBtn {
-  display: grid;
-  background-color: #85f4ff;
+#displayHabitAndFrequencyBg a {
+  background-color: #42c2ff;
   padding: 1rem;
-  border-radius: 1rem;
   font-weight: 900;
   cursor: pointer;
+  width: 6rem;
+  font-size: 1.2rem;
 }
 
-#noHabitBtn:hover {
-  background-color: #42c2ff;
+#displayHabitAndFrequencyBg span {
+  color: #85f4ff;
 }
 
-@media (min-width: 576px) {
-  #noHabitBtn {
-    padding: 1.5rem;
+#displayHabitAndFrequencyBg a:hover {
+  background-color: #85f4ff;
+}
+
+@media (min-width: 992px) {
+  #displayHabitAndFrequencyBg h1 {
+    font-size: 2.5rem;
   }
-  #noHabitBtn {
+
+  #displayHabitAndFrequencyBg h2 {
+    font-size: 2rem;
+  }
+
+  #displayHabitAndFrequencyBg a {
+    width: 7rem;
     font-size: 1.5rem;
   }
 }

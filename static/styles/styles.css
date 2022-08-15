@@ -211,6 +211,7 @@ li {
   padding: 0.5rem 2rem;
   font-size: 1em;
   cursor: pointer;
+  font-weight: 900;
 }
 
 .habit-div input[type='button']:hover {
@@ -324,7 +325,7 @@ h2 {
 }
 
 #displayHabitAndFrequencyBg span {
-  color: #85f4ff;
+  color: #42c2ff;
 }
 
 #displayHabitAndFrequencyBg a:hover {

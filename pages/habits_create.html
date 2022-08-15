@@ -18,11 +18,12 @@
       defer
     ></script>
     <!-- custom css links -->
-    <link rel="stylesheet" href="./static/styles/universal.css" />
-    <link rel="stylesheet" href="./static/styles/home.css" />
+    <link rel="stylesheet" href="../static/styles/universal.css" />
+    <link rel="stylesheet" href="../static/styles/arrow_left.css" />
+    <link rel="stylesheet" href="../static/styles/habits_create.css" />
     <!-- custom js links -->
-    <script src="./static/scripts/universal.js" defer></script>
-    <script src="./static/scripts/navBar.js" defer></script>
+    <script src="../static/scripts/universal.js" defer></script>
+    <script src="../static/scripts/navBar.js" defer></script>
     <title>Habit Tracker</title>
   </head>
   <body>
@@ -30,27 +31,30 @@
     <nav id="navBarSmallBg">
       <i class="fa-solid fa-bars" id="bars"></i>
       <ul id="navLinksSmall">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./pages/login">Login</a></li>
-        <li><a href="./pages/register">Register</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./login">Login</a></li>
+        <li><a href="./register">Register</a></li>
       </ul>
     </nav>
 
     <!-- nav for larger screens -->
     <nav id="navBarLargeBg">
-      <a href="./index.html">Home</a>
-      <a href="./pages/login">Login</a>
-      <a href="./pages/register">Register</a>
+      <a href="#">Home</a>
+      <a href="#">Login</a>
+      <a href="#">Register</a>
     </nav>
 
-    <main id="mainBgHome">
-      <header id="homeTitle">
-        <h1>You have no habits</h1>
-      </header>
-
-      <aside id="homeBtn">
-        <a href="#">Create Habit</a>
+    <main id="mainBgHabitCreate">
+      <aside id="leftArrow">
+        <i class="fa-solid fa-circle-left"></i>
       </aside>
+
+      <section id="habitCreateContainer">
+        <h1>Selected habit: <span>[Sleep]</span></h1>
+        <h2>Choose frequency</h2>
+        <button>Daily</button>
+        <button>Weekly</button>
+      </section>
     </main>
 
     <footer id="footerBg">

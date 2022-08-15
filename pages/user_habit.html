@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/bfcbb8f6a3.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <!-- jquery cdn -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.js"
@@ -20,15 +26,9 @@
     <!-- custom css -->
     <link rel="stylesheet" href="../static/styles/styles.css" />
     <link rel="stylesheet" href="../static/styles/login-register.css" />
-    <!-- font awesome -->
-    <script
-      src="https://kit.fontawesome.com/701be9d26f.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
     <!-- custom js -->
     <script src="../static/scripts/scripts.js" defer></script>
-    <title>Habits</title>
+    <title>Your Habits</title>
   </head>
   <body>
     <!-- nav for smaller screens -->
@@ -36,8 +36,8 @@
       <i class="fa-solid fa-bars" id="bars"></i>
       <ul id="navLinksSmall">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="./login.html">Login</a></li>
-        <li><a href="./register.html">Register</a></li>
+        <li><a href="./pages/login.html">Login</a></li>
+        <li><a href="./pages/register.html">Register</a></li>
       </ul>
     </nav>
 
@@ -52,22 +52,11 @@
       <i class="fa-solid fa-circle-left"></i>
     </aside>
 
-    <main class="container">
-      <div class="form-container">
-        <h2>Let's get started.</h2>
-        <h3>Choose a habit:</h3>
-        <form id="login-register">
-          <div class="habit-div">
-            <input type="button" value="Sleep" />
-          </div>
-          <div class="habit-div">
-            <input type="button" value="Water" />
-          </div>
-          <div class="habit-div">
-            <input type="button" value="Exercise" />
-          </div>
-        </form>
-      </div>
+    <main>
+      <header>
+        <h1>Your habit loop:</h1>
+        <h2>I will sleep for <span>[6]</span>hours</h2>
+      </header>
     </main>
 
     <footer id="footerBg">

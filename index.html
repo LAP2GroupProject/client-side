@@ -11,19 +11,24 @@
       href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
       rel="stylesheet"
     />
-    <!-- font awesome (icons) -->
+    <!-- font awesome -->
     <script
-      src="https://kit.fontawesome.com/bfcbb8f6a3.js"
+      src="https://kit.fontawesome.com/701be9d26f.js"
       crossorigin="anonymous"
       defer
     ></script>
-    <!-- custom css links -->
-    <link rel="stylesheet" href="./static/styles/universal.css" />
-    <!-- custom js links -->
-    <link rel="stylesheet" href="./static/styles/home.css" />
-    <script src="./static/scripts/universal.js" defer></script>
-    <script src="./static/scripts/navBar.js" defer></script>
-    <title>Habit Tracker</title>
+    <!-- jquery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./static/styles/styles.css" />
+    <link rel="stylesheet" href="./static/styles/login-register.css" />
+    <!-- custom js -->
+    <script src="./static/scripts/scripts.js" defer></script>
+    <title>Login</title>
   </head>
   <body>
     <!-- nav for smaller screens -->
@@ -31,17 +36,41 @@
       <i class="fa-solid fa-bars" id="bars"></i>
       <ul id="navLinksSmall">
         <li><a href="./index.html">Home</a></li>
-        <li><a href="./pages/login.html">Login</a></li>
-        <li><a href="./pages/register.html">Register</a></li>
+        <li><a href="./login.html">Login</a></li>
+        <li><a href="./register.html">Register</a></li>
       </ul>
     </nav>
 
     <!-- nav for larger screens -->
     <nav id="navBarLargeBg">
       <a href="./index.html">Home</a>
-      <a href="./pages/login.html">Login</a>
-      <a href="./pages/register.html">Register</a>
+      <a href="./login.html">Login</a>
+      <a href="./register.html">Register</a>
     </nav>
+
+    <aside id="leftArrow">
+      <i class="fa-solid fa-circle-left"></i>
+    </aside>
+
+    <main class="container">
+      <div class="form-container">
+        <h2>Habit Tracker</h2>
+        <form id="login-register">
+          <div class="username-div">
+            <i class="fas fa-sign-in-alt"></i
+            ><input type="text" placeholder="Username" />
+          </div>
+          <div class="password-div">
+            <i class="fa-solid fa-lock"></i
+            ><input type="password" placeholder="Password" />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <p>
+          Don't have an account? <a href="./pages/register.html">Create an account</a>
+        </p>
+      </div>
+    </main>
 
     <footer id="footerBg">
       <i class="fa-solid fa-user"></i>

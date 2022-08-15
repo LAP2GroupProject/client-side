@@ -1,5 +1,4 @@
 /****************************************************** custom defaults */
-
 /* removes auto blue highlighting */
 ::selection {
   color: none;
@@ -72,6 +71,7 @@ li {
 
 #navLinksSmall a:hover {
   color: #42c2ff;
+  font-weight: 900;
 }
 
 @media (min-width: 992px) {
@@ -99,11 +99,11 @@ li {
 
   #navBarLargeBg a:hover {
     color: #42c2ff;
+    font-weight: 900;
   }
 }
 
 /****************************************************** footer */
-
 #footerBg {
   position: absolute;
   bottom: 0;

@@ -4,6 +4,12 @@
   padding-top: 14rem;
 }
 
+@media (min-width: 576px) {
+  #mainBgHabitCreate {
+    padding-top: 8rem;
+  }
+}
+
 /****************************************************** arrow */
 #leftArrow {
   position: absolute;
@@ -18,4 +24,11 @@
 
 .fa-solid.fa-circle-left:hover {
   color: #42c2ff;
+}
+
+@media (min-width: 576px) {
+  #leftArrow {
+    top: 2rem;
+    left: 3rem;
+  }
 }

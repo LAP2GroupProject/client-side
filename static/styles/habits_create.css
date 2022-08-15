@@ -25,3 +25,21 @@ h2 {
 #habitCreateContainer button:hover {
   background-color: #42c2ff;
 }
+
+@media (min-width: 576px) {
+  #habitCreateContainer h1 {
+    font-size: 3rem;
+  }
+
+  #habitCreateContainer span {
+    color: #42c2ff;
+  }
+
+  #habitCreateContainer h2 {
+    font-size: 2rem;
+  }
+
+  #habitCreateContainer button {
+    font-size: 2rem;
+  }
+}

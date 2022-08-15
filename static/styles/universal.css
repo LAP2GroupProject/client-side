@@ -1,4 +1,16 @@
 /****************************************************** custom defaults */
+
+/* removes auto blue highlighting */
+::selection {
+  color: none;
+  background: none;
+}
+/* For Mozilla Firefox */
+::-moz-selection {
+  color: none;
+  background: none;
+}
+
 * {
   margin: 0;
   padding: 0;

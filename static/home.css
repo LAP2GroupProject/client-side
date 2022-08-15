@@ -1,0 +1,25 @@
+/****************************************************** home */
+#mainBg {
+  display: grid;
+  justify-items: center;
+  /* footer height */
+  padding-bottom: 2.5rem;
+}
+
+#homeTitle {
+  margin: 15rem auto 2rem;
+}
+
+/****************************************************** btn */
+#homeBtn {
+  display: grid;
+  background-color: #85f4ff;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+#homeBtn:hover {
+  background-color: #42c2ff;
+}

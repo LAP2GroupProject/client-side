@@ -28,7 +28,20 @@
     <!-- <link rel="stylesheet" href="../static/styles/login-register.css" /> -->
     <!-- custom js -->
     <script src="../static/scripts/scripts.js" defer></script>
-    <title>Login</title>
+
+    <!-- embedded css styles -->
+    <style>
+      body {
+        padding-top: 14rem;
+      }
+
+      @media (min-width: 992px) {
+        body {
+          padding-top: 12rem;
+        }
+      }
+    </style>
+    <title>Create Habits</title>
   </head>
   <body>
     <!-- nav for smaller screens -->
@@ -98,9 +111,11 @@
     </main>
 
     <footer id="footerBg">
-      <i class="fa-solid fa-user"></i>
-      <i class="fa-solid fa-calendar-days"></i>
-      <i class="fa-solid fa-sun"></i>
+      <a href="./user_habit.html"><i class="fa-solid fa-user"></i></a>
+      <a href="./user_habit_completed.html"
+        ><i class="fa-solid fa-calendar-days"></i
+      ></a>
+      <a href="./create_habit.html"><i class="fa-solid fa-sun"></i></a>
     </footer>
   </body>
 </html>

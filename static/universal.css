@@ -20,7 +20,11 @@ a {
   text-decoration: none;
 }
 
-/****************************************************** nav */
+li {
+  list-style: none;
+}
+
+/****************************************************** nav (small) */
 #navBarLargeBg {
   display: none;
 }
@@ -32,6 +36,7 @@ a {
   padding: 0.7rem;
   width: 100%;
   height: 4rem;
+  position: absolute;
 }
 
 .fa-solid.fa-bars {
@@ -42,7 +47,22 @@ a {
   color: #42c2ff;
 }
 
+#navLinksSmall {
+  display: none;
+  grid-template-columns: auto;
+  justify-content: end;
+  justify-items: end;
+  right: 1rem;
+  top: 1rem;
+  position: absolute;
+}
+
+#navLinksSmall a:hover {
+  color: #42c2ff;
+}
+
 @media (min-width: 992px) {
+  /****************************************************** nav (large) */
   #navBarSmallBg {
     display: none;
   }

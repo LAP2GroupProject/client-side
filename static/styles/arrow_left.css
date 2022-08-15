@@ -1,0 +1,20 @@
+/****************************************************** main bg */
+#mainBgHabitCreate {
+  position: relative;
+}
+
+/****************************************************** arrow */
+#leftArrow {
+  position: absolute;
+  top: 5rem;
+  left: 0.5rem;
+}
+
+.fa-solid.fa-circle-left {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.fa-solid.fa-circle-left:hover {
+  color: #42c2ff;
+}

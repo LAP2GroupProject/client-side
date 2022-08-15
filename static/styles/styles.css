@@ -58,6 +58,10 @@ li {
   font-size: 1.5rem;
 }
 
+.fa-solid.fa-bars#bars:hover {
+  color: #42c2ff;
+}
+
 #mobileNavLinksBg {
   text-align: right;
   background-color: #effffd;

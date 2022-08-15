@@ -21,7 +21,11 @@ a {
 }
 
 /****************************************************** nav */
-#navBarBg {
+#navBarLargeBg {
+  display: none;
+}
+
+#navBarSmallBg {
   text-align: left;
   font-size: 2rem;
   background-color: #effffd;
@@ -37,6 +41,34 @@ a {
 .fa-solid.fa-bars:hover {
   color: #42c2ff;
 }
+
+@media (min-width: 992px) {
+  #navBarSmallBg {
+    display: none;
+  }
+
+  #navBarLargeBg {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 2rem;
+    background-color: #effffd;
+    padding: 0.7rem;
+    width: 100%;
+    height: 4rem;
+    align-content: center;
+    justify-content: end;
+    grid-gap: 4rem;
+  }
+
+  #navBarLargeBg a {
+    font-size: 2rem;
+  }
+
+  #navBarLargeBg a:hover {
+    color: #42c2ff;
+  }
+}
+
 /****************************************************** footer */
 
 #footerBg {
@@ -58,4 +90,12 @@ a {
 .fa-solid.fa-calendar-days:hover,
 .fa-solid.fa-sun:hover {
   color: #42c2ff;
+}
+
+@media (min-width: 992px) {
+  .fa-solid.fa-user,
+  .fa-solid.fa-calendar-days,
+  .fa-solid.fa-sun {
+    font-size: 2rem;
+  }
 }

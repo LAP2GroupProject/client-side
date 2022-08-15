@@ -11,20 +11,20 @@
       href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
       rel="stylesheet"
     />
+    <!-- custom css -->
+    <link rel="stylesheet" href="../static/styles/universal.css" />
+    <link rel="stylesheet" href="../static/styles/arrow_left.css" />
+    <link rel="stylesheet" href="../static/styles/login-register.css" />
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/701be9d26f.js"
       crossorigin="anonymous"
       defer
     ></script>
-    <!-- custom css -->
-    <link rel="stylesheet" href="../static/styles/universal.css" />
-    <link rel="stylesheet" href="../static/styles/arrow_left.css" />
-    <link rel="stylesheet" href="../static/styles/login-register.css" />
     <!-- custom js -->
     <script src="../static/scripts/universal.js" defer></script>
     <script src="../static/scripts/navBar.js" defer></script>
-    <title>Register</title>
+    <title>Habits</title>
   </head>
   <body>
     <!-- nav for smaller screens -->
@@ -40,35 +40,31 @@
     <!-- nav for larger screens -->
     <nav id="navBarLargeBg">
       <a href="../index.html">Home</a>
-      <a href="./login.html">Login</a>
-      <a href="./register.html">Register</a>
+      <a href="./pages/login.html">Login</a>
+      <a href="./pages/register.html">Register</a>
     </nav>
 
     <aside id="leftArrow">
       <i class="fa-solid fa-circle-left"></i>
     </aside>
 
-    <div class="container">
+    <main class="container">
       <div class="form-container">
-        <h2>Join Habit Tracker today.</h2>
+        <h2>Let's get started.</h2>
+        <h3>Choose a habit:</h3>
         <form id="login-register">
-          <div class="username-div">
-            <input type="text" placeholder="Name" />
+          <div class="habit-div">
+            <input type="button" value="Sleep" />
           </div>
-          <div class="password-div">
-            <input type="text" placeholder="Username" />
+          <div class="habit-div">
+            <input type="button" value="Water" />
           </div>
-          <div class="password-div">
-            <input type="password" placeholder="Password" />
+          <div class="habit-div">
+            <input type="button" value="Exercise" />
           </div>
-          <div class="password-div">
-            <input type="email" placeholder="Email" />
-          </div>
-          <button type="submit">Register</button>
         </form>
-        <p>Already have an account? <a href="./login.html">Log in</a></p>
       </div>
-    </div>
+    </main>
 
     <footer id="footerBg">
       <i class="fa-solid fa-user"></i>

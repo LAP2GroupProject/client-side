@@ -25,10 +25,3 @@
 .fa-solid.fa-circle-left:hover {
   color: #42c2ff;
 }
-
-@media (min-width: 576px) {
-  #leftArrow {
-    top: 6rem;
-    left: 3rem;
-  }
-}

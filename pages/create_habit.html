@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="../static/styles/styles.css" />
     <!-- custom js -->
     <script src="../static/scripts/scripts.js" defer></script>
+    <script src="../static/scripts/habits.js" defer></script>
 
     <!-- embedded css styles -->
     <style>
@@ -68,29 +69,30 @@
       <!-- ----------------------------------- 'NO HABITS' SECTION ---------------------------------------- -->
       <section id="noHabitsBg">
         <h1>You have no habits</h1>
-        <a href="./pages/habits_create.html" id="noHabitBtn">Create Habit</a>
+        <button id="noHabitBtn">Create Habit</button>
+        <!-- <a href="./pages/habits_create.html" id="noHabitBtn">Create Habit</a> -->
       </section>
 
       <!-- ----------------------------------- 'SELECT HABITS' SECTION ---------------------------------------- -->
-      <section id="habitsBg">
+      <section id="habitsBg" style="display: none;">
         <h1>Let's get started.</h1>
         <h2>Choose a habit:</h2>
 
         <form>
           <div class="habit-div">
-            <input type="button" value="Sleep" />
+            <input type="button" value="Sleep" class="selectedHabit" />
           </div>
           <div class="habit-div">
-            <input type="button" value="Water" />
+            <input type="button" value="Water" class="selectedHabit" />
           </div>
           <div class="habit-div">
-            <input type="button" value="Exercise" />
+            <input type="button" value="Exercise" class="selectedHabit" />
           </div>
         </form>
       </section>
 
       <!-- ----------------------------------- 'SELECT FREQUENCY' SECTION ---------------------------------------- -->
-      <section id="habitCreateContainer">
+      <section id="habitCreateContainer" style="display: none;">
         <h1>Selected habit: <span>[Sleep]</span></h1>
         <h2>Enter how many hours</h2>
 
@@ -101,7 +103,7 @@
       </section>
 
       <!-- ----------------------------------- 'DISPLAY HABIT & FREQUENCY' SECTION ---------------------------------------- -->
-      <section id="displayHabitAndFrequencyBg">
+      <section id="displayHabitAndFrequencyBg" style="display: none;">
         <h1>Selected habit: <span>[Sleep]</span></h1>
         <h2>I will sleep for: <span>[6]</span> hours</h2>
 

@@ -29,19 +29,6 @@
     <script src="../static/scripts/scripts.js" defer></script>
     <script src="../static/scripts/habits.js" defer></script>
     <script src="../static/scripts/requests.js"></script>
-
-    <!-- embedded css styles -->
-    <style>
-      body {
-        padding-top: 14rem;
-      }
-
-      @media (min-width: 992px) {
-        body {
-          padding-top: 12rem;
-        }
-      }
-    </style>
     <title>Create Habits</title>
   </head>
   <body>
@@ -71,57 +58,56 @@
       <section id="noHabitsBg">
         <h1>You have no habits</h1>
         <button id="noHabitBtn">Create Habit</button>
-        <!-- <a href="./pages/habits_create.html" id="noHabitBtn">Create Habit</a> -->
       </section>
 
       <!-- ----------------------------------- 'SELECT HABITS' SECTION ---------------------------------------- -->
       <section id="habitsBg" style="display: none;">
-        <h1>Let's get started.</h1>
+        <h1>Let's get started</h1>
         <h2>Choose a habit:</h2>
 
         <form>
           <div class="habit-div">
-            <input type="button" value="Sleep" class="selectedHabit"/>
+            <input type="button" value="Sleep" class="selectedHabit" required/>
           </div>
           <div class="habit-div">
-            <input type="button" value="Water" class="selectedHabit"/>
+            <input type="button" value="Water" class="selectedHabit" required/>
           </div>
           <div class="habit-div">
-            <input type="button" value="Exercise" class="selectedHabit"/>
+            <input type="button" value="Exercise" class="selectedHabit" required/>
           </div>
         </form>
       </section>
 
       <!-- ----------------------------------- 'SELECT SLEEP FREQUENCY' SECTION ---------------------------------------- -->
       <section id="habitSleepContainer" style="display: none;">
-        <h1>Selected habit: <span>[Sleep]</span></h1>
+        <h1>Selected habit: <span>Sleep</span></h1>
         <h2>How many hours do you want to sleep every day?</h2>
 
         <div class="username-div">
-          <input type="number" name="hours"  id="sleepInput"/>
-          <input type="button" value="Next" id="sleep"/>
+          <input type="number" name="hours"  id="sleepInput" required/>
+          <input type="button" value="Next" id="sleep" required/>
         </div>
       </section>
 
       <!-- ----------------------------------- 'SELECT WATER FREQUENCY' SECTION ---------------------------------------- -->
       <section id="habitWaterContainer" style="display: none;">
-        <h1>Selected habit: <span>[Water]</span></h1>
+        <h1>Selected habit: <span>Water</span></h1>
         <h2>How much water (in litres) do you want to drink every day?</h2>
 
         <div class="username-div">
-          <input type="number" name="hours"  id="waterInput"/>
-          <input type="button" value="Next" id="water"/>
+          <input type="number" name="hours"  id="waterInput" required/>
+          <input type="button" value="Next" id="water" required/>
         </div>
       </section>
 
        <!-- ----------------------------------- 'SELECT EXERCISE FREQUENCY' SECTION ---------------------------------------- -->
        <section id="habitExerciseContainer" style="display: none;">
-        <h1>Selected habit: <span>[Exercise]</span></h1>
+        <h1>Selected habit: <span>Exercise</span></h1>
         <h2>How many days a week do you want to exercise?</h2>
 
         <div class="username-div">
-          <input type="number" name="hours"  id="exerciseInput"/>
-          <input type="button" value="Next" id="exercise"/>
+          <input type="number" name="hours"  id="exerciseInput" required/>
+          <input type="button" value="Next" id="exercise" required/>
         </div>
       </section>
 
@@ -134,13 +120,13 @@
 
         <!-- <a href="./user_habit.html">Submit</a> -->
         <!-- <form id="habitForm" style="display: none;">
-          <input id="habitInput" type="hidden" value="">
-          <input id="habitFrequency" type="hidden" value="">
+          <input id="habitInput" type="hidden" value="" required>
+          <input id="habitFrequency" type="hidden" value="" required>
         </form>
         <button id="submitHabit" onclick="post">Submit</button> -->
         <form id="habitForm">
-          <input id="habitInput" type="hidden" value="" name="habit">
-          <input id="habitFrequency" type="hidden" value="" name="frequency">
+          <input id="habitInput" type="hidden" value="" name="habit" required>
+          <input id="habitFrequency" type="hidden" value="" name="frequency" required>
           <button id="submitHabit">Submit</button>
         </form>
         

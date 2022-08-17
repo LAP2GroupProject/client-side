@@ -45,6 +45,9 @@ This is the client side repository of a habit tracker website.The server side re
 
 ## Wireframes/Screenshots/Images
 
+- SQL Database:
+  ![Image of SQL Database](./static/images/sql_db.png)
+
 - Login & Register:
   ![Wireframe for Mobile Screens](./static/images/login_and_register.png)
 

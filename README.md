@@ -1,6 +1,6 @@
-# Client Side
+# LAP 2 Portfolio Week Project Habit Tracker Client Side
 
-This is the client side repository of a habit tracker website.The server side repository of this website can be found [here](https://github.com/LAP2GroupProject/server-side). The server side repository is responsible taking in user's habit inputs whilst this client side repository is responsible for interacting with the server side to display such user inputs upon request. Users are able to register and/or log in to the website. After, they will be able to select various tasks they want to undertake, the amount of times they want to do it & document whether they complete it. The more habits they complete in a row, the greater their streak that gets stored.
+This is the client side repository of a habit tracker website.The server side repository of this website can be found [here](https://github.com/LAP2GroupProject/server-side). The server side repository is responsible taking in user's habit inputs whilst this client side repository is responsible for interacting with the server side to display such user inputs upon request. Users are able to register and/or log in to the website. After, they will be able to select various tasks they want to undertake, the amount of times they want to do it & document whether they complete it. The more habits they complete in a row, the greater their streak that gets stored. This project was deployed on [Netlify](https://elegant-taffy-228e7d.netlify.app/)
 
 ## Installation & usage
 

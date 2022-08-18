@@ -1,5 +1,9 @@
 **/node_modules
 **/coverage
 .vscode
+<<<<<<< HEAD
 .DS_Store
 **/other
+=======
+other
+>>>>>>> server-side/john-vivi-merge
